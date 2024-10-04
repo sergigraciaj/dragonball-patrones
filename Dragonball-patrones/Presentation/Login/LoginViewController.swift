@@ -39,8 +39,7 @@ final class LoginViewController: UIViewController {
             switch state {
             case .success:
                 self?.renderSuccess()
-                print("all ok")
-                //self?.present(HeroesListBuilder().build(), animated: true)
+                self?.present(HeroesListBuilder().build(), animated: true)
             case .error(let reason):
                 self?.renderError(reason)
             case .loading:
