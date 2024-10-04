@@ -17,7 +17,7 @@ protocol APIRequest {
     var body: Encodable? { get }
     var path: String { get }
     var headers: [String: String] { get }
-    var queryParameters: [String: String]? { get }
+    var queryParameters: [String: String] { get }
 
     associatedtype Response: Decodable
     typealias APIRequestResponse = Result<Response, APIErrorResponse>
