@@ -12,10 +12,7 @@ final class HeroesListBuilder {
         let useCase = GetAllHeroesUseCase()
         let viewModel = HeroesListViewModel(useCase: useCase)
         let viewController = HeroesListViewController(viewModel: viewModel)
-        
-        let navigationController = UINavigationController(rootViewController: viewController)
-        navigationController.modalPresentationStyle = .fullScreen
-        
-        return navigationController
+        viewController.modalPresentationStyle = .fullScreen
+        return viewController
     }
 }

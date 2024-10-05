@@ -92,6 +92,7 @@ final class HeroesListViewController: UIViewController, UITableViewDataSource, U
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("Hello world")
+        let hero = viewModel.heroes[indexPath.row]
+        self.navigationController?.show(HeroDetailBuilder().build(hero: hero), sender: self)
     }
 }
