@@ -14,19 +14,11 @@
 			remoteGlobalIDString = 6A24DD272CB05D0B006E5C51;
 			remoteInfo = "Dragonball-patrones";
 		};
-		6A24DD492CB05D0D006E5C51 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6A24DD202CB05D0B006E5C51 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6A24DD272CB05D0B006E5C51;
-			remoteInfo = "Dragonball-patrones";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		6A24DD282CB05D0B006E5C51 /* Dragonball-patrones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dragonball-patrones.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A24DD3E2CB05D0D006E5C51 /* Dragonball-patronesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dragonball-patronesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6A24DD482CB05D0D006E5C51 /* Dragonball-patronesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dragonball-patronesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -53,11 +45,6 @@
 			path = "Dragonball-patronesTests";
 			sourceTree = "<group>";
 		};
-		6A24DD4B2CB05D0D006E5C51 /* Dragonball-patronesUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Dragonball-patronesUITests";
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,13 +62,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6A24DD452CB05D0D006E5C51 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -90,7 +70,6 @@
 			children = (
 				6A24DD2A2CB05D0B006E5C51 /* Dragonball-patrones */,
 				6A24DD412CB05D0D006E5C51 /* Dragonball-patronesTests */,
-				6A24DD4B2CB05D0D006E5C51 /* Dragonball-patronesUITests */,
 				6A24DD292CB05D0B006E5C51 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -100,7 +79,6 @@
 			children = (
 				6A24DD282CB05D0B006E5C51 /* Dragonball-patrones.app */,
 				6A24DD3E2CB05D0D006E5C51 /* Dragonball-patronesTests.xctest */,
-				6A24DD482CB05D0D006E5C51 /* Dragonball-patronesUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -153,29 +131,6 @@
 			productReference = 6A24DD3E2CB05D0D006E5C51 /* Dragonball-patronesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		6A24DD472CB05D0D006E5C51 /* Dragonball-patronesUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6A24DD592CB05D0D006E5C51 /* Build configuration list for PBXNativeTarget "Dragonball-patronesUITests" */;
-			buildPhases = (
-				6A24DD442CB05D0D006E5C51 /* Sources */,
-				6A24DD452CB05D0D006E5C51 /* Frameworks */,
-				6A24DD462CB05D0D006E5C51 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6A24DD4A2CB05D0D006E5C51 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				6A24DD4B2CB05D0D006E5C51 /* Dragonball-patronesUITests */,
-			);
-			name = "Dragonball-patronesUITests";
-			packageProductDependencies = (
-			);
-			productName = "Dragonball-patronesUITests";
-			productReference = 6A24DD482CB05D0D006E5C51 /* Dragonball-patronesUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -191,10 +146,7 @@
 					};
 					6A24DD3D2CB05D0D006E5C51 = {
 						CreatedOnToolsVersion = 16.0;
-						TestTargetID = 6A24DD272CB05D0B006E5C51;
-					};
-					6A24DD472CB05D0D006E5C51 = {
-						CreatedOnToolsVersion = 16.0;
+						LastSwiftMigration = 1600;
 						TestTargetID = 6A24DD272CB05D0B006E5C51;
 					};
 				};
@@ -215,7 +167,6 @@
 			targets = (
 				6A24DD272CB05D0B006E5C51 /* Dragonball-patrones */,
 				6A24DD3D2CB05D0D006E5C51 /* Dragonball-patronesTests */,
-				6A24DD472CB05D0D006E5C51 /* Dragonball-patronesUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -229,13 +180,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		6A24DD3C2CB05D0D006E5C51 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6A24DD462CB05D0D006E5C51 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -259,13 +203,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6A24DD442CB05D0D006E5C51 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -273,11 +210,6 @@
 			isa = PBXTargetDependency;
 			target = 6A24DD272CB05D0B006E5C51 /* Dragonball-patrones */;
 			targetProxy = 6A24DD3F2CB05D0D006E5C51 /* PBXContainerItemProxy */;
-		};
-		6A24DD4A2CB05D0D006E5C51 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6A24DD272CB05D0B006E5C51 /* Dragonball-patrones */;
-			targetProxy = 6A24DD492CB05D0D006E5C51 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -467,6 +399,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F52LBCNW86;
@@ -480,6 +413,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dragonball-patrones.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Dragonball-patrones";
@@ -490,6 +424,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F52LBCNW86;
@@ -506,48 +441,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dragonball-patrones.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Dragonball-patrones";
-			};
-			name = Release;
-		};
-		6A24DD5A2CB05D0D006E5C51 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = F52LBCNW86;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "me.Dragonball-patronesUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Dragonball-patrones";
-			};
-			name = Debug;
-		};
-		6A24DD5B2CB05D0D006E5C51 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = F52LBCNW86;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "me.Dragonball-patronesUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Dragonball-patrones";
 			};
 			name = Release;
 		};
@@ -577,15 +470,6 @@
 			buildConfigurations = (
 				6A24DD572CB05D0D006E5C51 /* Debug */,
 				6A24DD582CB05D0D006E5C51 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6A24DD592CB05D0D006E5C51 /* Build configuration list for PBXNativeTarget "Dragonball-patronesUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6A24DD5A2CB05D0D006E5C51 /* Debug */,
-				6A24DD5B2CB05D0D006E5C51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
