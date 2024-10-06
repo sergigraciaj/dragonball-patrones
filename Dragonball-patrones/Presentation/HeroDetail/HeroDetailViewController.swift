@@ -39,6 +39,10 @@ final class HeroDetailViewController: UIViewController {
         viewModel.load(hero: self.hero)
     }
     
+    @IBAction func onTransformationButtonTapped(_ sender: Any) {
+        self.navigationController?.show(HeroTransformationListBuilder().build(hero: self.hero), sender: self)
+    }
+    
     // MARK: - States
     private func bind() {
         viewModel.onStateChanged.bind { [weak self] state in
