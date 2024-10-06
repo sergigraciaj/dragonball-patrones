@@ -1,5 +1,5 @@
 //
-//  HeroesListBuilder.swift
+//  HeroTransformationsListBuilder.swift
 //  Dragonball-patrones
 //
 //  Created by Sergio Gracia Jimenez on 6/10/24.

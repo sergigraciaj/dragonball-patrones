@@ -1,5 +1,5 @@
 //
-//  HeroesListViewController.swift
+//  HeroTransformationsListViewController.swift
 //  Dragonball-patrones
 //
 //  Created by Sergio Gracia Jimenez on 6/10/24.
@@ -94,6 +94,7 @@ final class HeroTransformationListViewController: UIViewController, UITableViewD
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("get transformation detail")
+        let transformation = viewModel.transformations[indexPath.row]
+        self.navigationController?.show(TransformationDetailBuilder().build(transformation: transformation), sender: self)
     }
 }

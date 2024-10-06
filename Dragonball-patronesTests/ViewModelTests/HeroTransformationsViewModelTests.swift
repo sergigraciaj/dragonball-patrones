@@ -10,10 +10,7 @@ import XCTest
 
 private final class SuccessGetHeroTransformationsUseCaseMock: GetHeroTransformationsUseCaseContract {
     func execute(hero: Dragonball_patrones.Hero, completion: @escaping (Result<[Dragonball_patrones.Transformation], any Error>) -> Void) {
-        completion(.success([Transformation(id: "1234",
-                                  name: "potato",
-                                  description: "",
-                                  photo: "")]))
+        completion(.success([Transformation(id: "1234", name: "potato", description: "", photo: "", hero: TransformationHero(id: "randomId"))]))
     }
 }
 

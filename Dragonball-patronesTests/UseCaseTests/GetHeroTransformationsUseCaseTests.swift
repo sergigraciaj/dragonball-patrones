@@ -1,5 +1,5 @@
 //
-//  Untitled.swift
+//  GetHeroTransformationUseCaseTests.swift
 //  Dragonball-patrones
 //
 //  Created by Sergio Gracia Jimenez on 6/10/24.
@@ -8,21 +8,17 @@
 @testable import Dragonball_patrones
 import XCTest
 
-final class GetHeroTransformationUseCaseTests: XCTestCase {
-    let requestTransformation = Transformation(id: "1234", name: "potato", description: "", photo: "", hero: TransformationHero(id: "randomId"))
+final class GetHeroTransformationsUseCaseTests: XCTestCase {
+    let requestHero = Hero(identifier: "randomID", name: "randomName", description: "randomDescription", photo: "randomPhoto", favorite: false)
     
     func testSuccess() {
-        let expectedAPIResponse = [
-            Transformation(id: "1234", name: "potato", description: "", photo: "", hero: TransformationHero(id: "randomId")),
-            Transformation(id: "4321", name: "potato", description: "", photo: "", hero: TransformationHero(id: "randomId"))
-        ]
-        let expectedResponse = Transformation(id: "1234", name: "potato", description: "", photo: "", hero: TransformationHero(id: "randomId"))
-        let sut = GetHeroTransformationUseCase()
+        let expectedResponse = [Transformation(id: "1234", name: "potato", description: "", photo: "", hero: TransformationHero(id: "randomId"))]
+        let sut = GetHeroTransformationsUseCase()
         
         let expectation = self.expectation(description: "TestSuccess")
         let data: Data
         do {
-            data = try JSONEncoder().encode(expectedAPIResponse)
+            data = try JSONEncoder().encode(expectedResponse)
         } catch {
             XCTFail("Failed to encode response: \(error)")
             return
@@ -30,7 +26,7 @@ final class GetHeroTransformationUseCaseTests: XCTestCase {
         
         APISession.shared = APISessionMock { _ in .success(data) }
 
-        sut.execute(transformation: requestTransformation) { result in
+        sut.execute(hero: requestHero) { result in
             switch result {
             case .success(let response):
                 XCTAssertEqual(expectedResponse, response, "Returned transformations do not match expected transformations.")
@@ -45,13 +41,13 @@ final class GetHeroTransformationUseCaseTests: XCTestCase {
     
 
     func testFailure() {
-        let sut = GetHeroTransformationUseCase()
+        let sut = GetHeroTransformationsUseCase()
         
         let expectation = self.expectation(description: "TestFailure")
         let expectedError = APIErrorResponse.network("transformations-fail")
         APISession.shared = APISessionMock { _ in .failure(expectedError) }
         
-        sut.execute(transformation: requestTransformation) { result in
+        sut.execute(hero: requestHero) { result in
             switch result {
             case .success:
                 XCTFail("Expected failure but got success")

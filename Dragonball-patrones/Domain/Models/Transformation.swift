@@ -10,4 +10,9 @@ struct Transformation: Codable, Equatable {
     let name: String
     let description: String
     let photo: String
+    let hero: TransformationHero
+}
+
+struct TransformationHero: Codable, Equatable {
+    let id: String
 }
